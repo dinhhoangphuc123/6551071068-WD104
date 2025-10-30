@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="main.css.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <textarea id="message" placeholder="Enter Message"></textarea>
+
+      <div class="row">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="email" placeholder="Enter email address">
+      </div>
+
+      <input type="text" id="subject" placeholder="Enter Subject">
+
+      <div class="radio-group">
+        <label>Bạn muốn liên hệ về:</label><br>
+        <label><input type="radio" name="topic" value="kythuat"> Kỹ thuật</label>
+        <label><input type="radio" name="topic" value="donhang"> Đơn hàng</label>
+        <label><input type="radio" name="topic" value="khac" checked> Khác</label>
+      </div>
+
+      <div class="select-group">
+        <label>Chọn chủ đề liên hệ:</label>
+        <select id="contactSelect">
+          <option value="">-- Chọn chủ đề --</option>
+          <option value="hotro">Hỗ trợ khách hàng</option>
+          <option value="baohanh">Bảo hành</option>
+          <option value="gopy">Góp ý</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">SEND MESSAGE</button>
+    </form>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
